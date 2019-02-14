@@ -1,0 +1,19 @@
+.photos {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  overflow: scroll;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.images {
+  margin: 5px;
+}
