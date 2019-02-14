@@ -4,7 +4,6 @@ const photoCount = 25;
 
 function processPhotos(json) {
   const n = JSON.parse(json);
-  console.log(n);
 
   const photos = n.photos.photo;
 
@@ -31,12 +30,8 @@ function displayPhotos(e) {
   if (photoContainer.childNodes.length > 0) {
     photoContainer.innerHTML = "";
   }
-
   const formInput = document.getElementById("input-field").value;
 
-  console.log(photoContainer.childNodes.length);
-
-  /*flickr.photos.search */
   const request = new XMLHttpRequest();
   request.open(
     "GET",
